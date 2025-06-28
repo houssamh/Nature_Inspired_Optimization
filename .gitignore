@@ -1,2 +1,4 @@
 # Ignore ini files
 *.ini
+# macOS system files
+.DS_Store
