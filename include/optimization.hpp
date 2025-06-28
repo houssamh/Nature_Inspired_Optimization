@@ -19,18 +19,4 @@ protected:
     void iterationMessage(int, double);
 };
 
-// Write messages
-void optimization::errorMessage()
-{
-    cout << "The error is equal to " << error << endl;
-}
-void optimization::convergenceMessage()
-{
-    cout << "Converged " << endl;
-}
-void optimization::iterationMessage(int iter, double valueLoss)
-{
-    cout << "iteration = " << iter << ", Loss =" << valueLoss << ", error = " << error << endl;
-}
-
 #endif // OPTIMIZATION_HPP

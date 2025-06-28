@@ -1,25 +1,8 @@
 /*
 Particle swarm optimization
 */
-#include "optimization.hpp"
-#include "functionsGrad.hpp"
-#include <random>
-#include <vector>
-using namespace std;
 
-class pso : public optimization
-{
-public:
-    int dim;       // Dimension of the solution
-    int pNumber;   // Particle number
-    double *xn;    // The solution
-    double *bInf;  // inferior limit of the domain
-    double *bSup;  // inferior limit of the domain
-    double c1;     // Cognitive coefficient
-    double c2;     // Social coefficient
-    double weigth; // Inertia weight
-    void optimize();
-};
+#include "pso.hpp"
 
 void pso::optimize()
 {
@@ -46,11 +29,13 @@ void pso::optimize()
                 globalBest[i] = pBest[i];
             }
         }
-        if (loss(xp) < loss(globalBest))
+        if (objective(xp) < objective(globalBest))
         {
             globalBest = xp; // xp is the global best position
         }
     }
+    cout << " " << endl;
+    cout << "PSO algorithm" << endl;
     for (int iter = 0; iter < iterNumber; iter++)
     {
         for (int p = 0; p < pNumber; p++) // Loop on the particles
@@ -65,15 +50,17 @@ void pso::optimize()
                 xp[i] = x[i + p * dim];
                 pb[i] = pBest[i + p * dim];
             }
-            if (loss(xp) < loss(pb))
+            if (objective(xp) < objective(pb))
             {
                 pb = xp; // xp is the global best position
             }
-            if (loss(pb) < loss(globalBest))
+            if (objective(pb) < objective(globalBest))
             {
                 globalBest = xp; // xp is the global best position
             }
         }
+        double fValue = objective(globalBest); // Objective function value
+        iterationMessage(iter, fValue);
     }
     for (int i = 0; i < dim; i++)
     {

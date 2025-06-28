@@ -1,0 +1,6 @@
+{
+  "files.associations": {
+    "*.ejs": "freefem",
+    "vector": "cpp"
+  }
+}
