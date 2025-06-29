@@ -18,3 +18,7 @@ void optimization::iterationMessage(int iter, double valueObjective)
 {
     cout << "iteration = " << iter << ", Objective =" << valueObjective << ", error = " << error << endl;
 }
+void optimization::iterationShortMessage(int iter, double valueObjective)
+{
+    cout << "iteration = " << iter << ", Objective =" << valueObjective << endl;
+}

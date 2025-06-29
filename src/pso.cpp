@@ -52,15 +52,19 @@ void pso::optimize()
             }
             if (objective(xp) < objective(pb))
             {
-                pb = xp; // xp is the global best position
+                pb = xp; // xp is the best position
+            }
+            for (int i = 0; i < dim; i++)
+            {
+                pBest[i + p * dim] = pb[i]; // Store the best solution
             }
             if (objective(pb) < objective(globalBest))
             {
-                globalBest = xp; // xp is the global best position
+                globalBest = pb; // xp is the global best position
             }
         }
         double fValue = objective(globalBest); // Objective function value
-        iterationMessage(iter, fValue);
+        iterationShortMessage(iter, fValue);
     }
     for (int i = 0; i < dim; i++)
     {

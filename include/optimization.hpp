@@ -17,6 +17,7 @@ protected:
     void errorMessage();
     void convergenceMessage();
     void iterationMessage(int, double);
+    void iterationShortMessage(int, double);
 };
 
 #endif // OPTIMIZATION_HPP

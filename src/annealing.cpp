@@ -10,6 +10,7 @@ void simulatedAnnealing::optimize()
     random_device rand;
     mt19937 generator(rand());
     uniform_real_distribution<> UnifDistribution1(0, 1);
+    uniform_real_distribution<> UnifDistribution2(-1, 1);
     // Initialization
     vector<double> xvector(dim);         // The solution array
     vector<double> xvectorNeighbor(dim); // A Neighbor of the actual position or the solution
@@ -23,16 +24,20 @@ void simulatedAnnealing::optimize()
         xvector[i] = *(xn + i);
     }
     temperature = temperatureInitial;
+
     while (temperature > temperatureMinimal) // Cooling procedure
     {
+        cout << " " << endl;
+        cout << "Temperature = " << temperature << endl;
         for (int iter = 0; iter < iterNumber; iter++) // Trying to find a minimum for each temperature
         {
+            error = 0;
             deltaE = -objective(xvector);
             // Create a neighbor of the actual position
             normSquare = 0; // Norm of the neighbor step
             for (int i = 0; i < dim; i++)
             {
-                step[i] = UnifDistribution1(generator); // random step
+                step[i] = UnifDistribution2(generator); // random step
                 normSquare += step[i] * step[i];
             }
             normSquare = sqrt(normSquare); // Step norm
@@ -44,8 +49,7 @@ void simulatedAnnealing::optimize()
             }
 
             deltaE += objective(xvectorNeighbor); // Delta E: Energy difference
-
-            if (deltaE < 0) // The energy is reduced
+            if (deltaE < 0)                       // The energy is reduced
             {
                 xvector = xvectorNeighbor;
             }
@@ -58,6 +62,8 @@ void simulatedAnnealing::optimize()
                     xvector = xvectorNeighbor; // Accept the new solution even if the energy is increasing
                 }
             }
+            double fValue = objective(xvector); // Objective function value
+            iterationShortMessage(iter, fValue);
         }
 
         temperature = alpha * temperature; // Reduce the temperature (Cooling)
