@@ -153,6 +153,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Optimizer.dir/build.make CMakeFiles/Optimizer.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/annealing.o: src/annealing.cpp.o
+.PHONY : src/annealing.o
+
+# target to build an object file
+src/annealing.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Optimizer.dir/build.make CMakeFiles/Optimizer.dir/src/annealing.cpp.o
+.PHONY : src/annealing.cpp.o
+
+src/annealing.i: src/annealing.cpp.i
+.PHONY : src/annealing.i
+
+# target to preprocess a source file
+src/annealing.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Optimizer.dir/build.make CMakeFiles/Optimizer.dir/src/annealing.cpp.i
+.PHONY : src/annealing.cpp.i
+
+src/annealing.s: src/annealing.cpp.s
+.PHONY : src/annealing.s
+
+# target to generate assembly for a file
+src/annealing.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Optimizer.dir/build.make CMakeFiles/Optimizer.dir/src/annealing.cpp.s
+.PHONY : src/annealing.cpp.s
+
 src/functionsGrad.o: src/functionsGrad.cpp.o
 .PHONY : src/functionsGrad.o
 
@@ -261,6 +285,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/annealing.o"
+	@echo "... src/annealing.i"
+	@echo "... src/annealing.s"
 	@echo "... src/functionsGrad.o"
 	@echo "... src/functionsGrad.i"
 	@echo "... src/functionsGrad.s"

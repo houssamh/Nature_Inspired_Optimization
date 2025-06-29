@@ -30,4 +30,6 @@ int main()
     soly = ps.xn[1];
     cout << "pso solx= " << solx << endl;
     cout << "pso soly= " << solx << endl;
+    // simulated Annealing
+    simulatedAnnealing sAn;
 }

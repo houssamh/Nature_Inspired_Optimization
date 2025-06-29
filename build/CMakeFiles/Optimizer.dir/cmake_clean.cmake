@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Optimizer.dir/main.cpp.o"
   "CMakeFiles/Optimizer.dir/main.cpp.o.d"
+  "CMakeFiles/Optimizer.dir/src/annealing.cpp.o"
+  "CMakeFiles/Optimizer.dir/src/annealing.cpp.o.d"
   "CMakeFiles/Optimizer.dir/src/functionsGrad.cpp.o"
   "CMakeFiles/Optimizer.dir/src/functionsGrad.cpp.o.d"
   "CMakeFiles/Optimizer.dir/src/gradientDescent.cpp.o"

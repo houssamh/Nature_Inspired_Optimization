@@ -83,10 +83,24 @@ CMakeFiles/Optimizer.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Optimizer.dir/main.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/houssamhoussein/Documents/GitHub/Nature_Inspired_Optimization/main.cpp -o CMakeFiles/Optimizer.dir/main.cpp.s
 
+CMakeFiles/Optimizer.dir/src/annealing.cpp.o: CMakeFiles/Optimizer.dir/flags.make
+CMakeFiles/Optimizer.dir/src/annealing.cpp.o: ../src/annealing.cpp
+CMakeFiles/Optimizer.dir/src/annealing.cpp.o: CMakeFiles/Optimizer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/houssamhoussein/Documents/GitHub/Nature_Inspired_Optimization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Optimizer.dir/src/annealing.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Optimizer.dir/src/annealing.cpp.o -MF CMakeFiles/Optimizer.dir/src/annealing.cpp.o.d -o CMakeFiles/Optimizer.dir/src/annealing.cpp.o -c /Users/houssamhoussein/Documents/GitHub/Nature_Inspired_Optimization/src/annealing.cpp
+
+CMakeFiles/Optimizer.dir/src/annealing.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Optimizer.dir/src/annealing.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/houssamhoussein/Documents/GitHub/Nature_Inspired_Optimization/src/annealing.cpp > CMakeFiles/Optimizer.dir/src/annealing.cpp.i
+
+CMakeFiles/Optimizer.dir/src/annealing.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Optimizer.dir/src/annealing.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/houssamhoussein/Documents/GitHub/Nature_Inspired_Optimization/src/annealing.cpp -o CMakeFiles/Optimizer.dir/src/annealing.cpp.s
+
 CMakeFiles/Optimizer.dir/src/functionsGrad.cpp.o: CMakeFiles/Optimizer.dir/flags.make
 CMakeFiles/Optimizer.dir/src/functionsGrad.cpp.o: ../src/functionsGrad.cpp
 CMakeFiles/Optimizer.dir/src/functionsGrad.cpp.o: CMakeFiles/Optimizer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/houssamhoussein/Documents/GitHub/Nature_Inspired_Optimization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Optimizer.dir/src/functionsGrad.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/houssamhoussein/Documents/GitHub/Nature_Inspired_Optimization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Optimizer.dir/src/functionsGrad.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Optimizer.dir/src/functionsGrad.cpp.o -MF CMakeFiles/Optimizer.dir/src/functionsGrad.cpp.o.d -o CMakeFiles/Optimizer.dir/src/functionsGrad.cpp.o -c /Users/houssamhoussein/Documents/GitHub/Nature_Inspired_Optimization/src/functionsGrad.cpp
 
 CMakeFiles/Optimizer.dir/src/functionsGrad.cpp.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/Optimizer.dir/src/functionsGrad.cpp.s: cmake_force
 CMakeFiles/Optimizer.dir/src/gradientDescent.cpp.o: CMakeFiles/Optimizer.dir/flags.make
 CMakeFiles/Optimizer.dir/src/gradientDescent.cpp.o: ../src/gradientDescent.cpp
 CMakeFiles/Optimizer.dir/src/gradientDescent.cpp.o: CMakeFiles/Optimizer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/houssamhoussein/Documents/GitHub/Nature_Inspired_Optimization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Optimizer.dir/src/gradientDescent.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/houssamhoussein/Documents/GitHub/Nature_Inspired_Optimization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Optimizer.dir/src/gradientDescent.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Optimizer.dir/src/gradientDescent.cpp.o -MF CMakeFiles/Optimizer.dir/src/gradientDescent.cpp.o.d -o CMakeFiles/Optimizer.dir/src/gradientDescent.cpp.o -c /Users/houssamhoussein/Documents/GitHub/Nature_Inspired_Optimization/src/gradientDescent.cpp
 
 CMakeFiles/Optimizer.dir/src/gradientDescent.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/Optimizer.dir/src/gradientDescent.cpp.s: cmake_force
 CMakeFiles/Optimizer.dir/src/optimization.cpp.o: CMakeFiles/Optimizer.dir/flags.make
 CMakeFiles/Optimizer.dir/src/optimization.cpp.o: ../src/optimization.cpp
 CMakeFiles/Optimizer.dir/src/optimization.cpp.o: CMakeFiles/Optimizer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/houssamhoussein/Documents/GitHub/Nature_Inspired_Optimization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Optimizer.dir/src/optimization.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/houssamhoussein/Documents/GitHub/Nature_Inspired_Optimization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Optimizer.dir/src/optimization.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Optimizer.dir/src/optimization.cpp.o -MF CMakeFiles/Optimizer.dir/src/optimization.cpp.o.d -o CMakeFiles/Optimizer.dir/src/optimization.cpp.o -c /Users/houssamhoussein/Documents/GitHub/Nature_Inspired_Optimization/src/optimization.cpp
 
 CMakeFiles/Optimizer.dir/src/optimization.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/Optimizer.dir/src/optimization.cpp.s: cmake_force
 CMakeFiles/Optimizer.dir/src/pso.cpp.o: CMakeFiles/Optimizer.dir/flags.make
 CMakeFiles/Optimizer.dir/src/pso.cpp.o: ../src/pso.cpp
 CMakeFiles/Optimizer.dir/src/pso.cpp.o: CMakeFiles/Optimizer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/houssamhoussein/Documents/GitHub/Nature_Inspired_Optimization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Optimizer.dir/src/pso.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/houssamhoussein/Documents/GitHub/Nature_Inspired_Optimization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Optimizer.dir/src/pso.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Optimizer.dir/src/pso.cpp.o -MF CMakeFiles/Optimizer.dir/src/pso.cpp.o.d -o CMakeFiles/Optimizer.dir/src/pso.cpp.o -c /Users/houssamhoussein/Documents/GitHub/Nature_Inspired_Optimization/src/pso.cpp
 
 CMakeFiles/Optimizer.dir/src/pso.cpp.i: cmake_force
@@ -142,6 +156,7 @@ CMakeFiles/Optimizer.dir/src/pso.cpp.s: cmake_force
 # Object files for target Optimizer
 Optimizer_OBJECTS = \
 "CMakeFiles/Optimizer.dir/main.cpp.o" \
+"CMakeFiles/Optimizer.dir/src/annealing.cpp.o" \
 "CMakeFiles/Optimizer.dir/src/functionsGrad.cpp.o" \
 "CMakeFiles/Optimizer.dir/src/gradientDescent.cpp.o" \
 "CMakeFiles/Optimizer.dir/src/optimization.cpp.o" \
@@ -151,13 +166,14 @@ Optimizer_OBJECTS = \
 Optimizer_EXTERNAL_OBJECTS =
 
 Optimizer: CMakeFiles/Optimizer.dir/main.cpp.o
+Optimizer: CMakeFiles/Optimizer.dir/src/annealing.cpp.o
 Optimizer: CMakeFiles/Optimizer.dir/src/functionsGrad.cpp.o
 Optimizer: CMakeFiles/Optimizer.dir/src/gradientDescent.cpp.o
 Optimizer: CMakeFiles/Optimizer.dir/src/optimization.cpp.o
 Optimizer: CMakeFiles/Optimizer.dir/src/pso.cpp.o
 Optimizer: CMakeFiles/Optimizer.dir/build.make
 Optimizer: CMakeFiles/Optimizer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/houssamhoussein/Documents/GitHub/Nature_Inspired_Optimization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Optimizer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/houssamhoussein/Documents/GitHub/Nature_Inspired_Optimization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Optimizer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Optimizer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
