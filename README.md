@@ -25,3 +25,5 @@ In addition, add "#include "example.hpp" in "metaheuristic.hpp".
   - make
 
   - ./Optimizer (to run)
+
+  Houssam
