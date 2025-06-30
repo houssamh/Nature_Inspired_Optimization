@@ -12,7 +12,7 @@ In "gradientDescent.cpp" write your objective function, and in "main.cpp" run th
 
 You can add your algorithm in the project, for example, "example.hpp" in "include" folder and "example.cpp" in "src" folder.
 
-In addition, add "#include "annealing.hpp" in "metaheuristic.hpp.
+In addition, add "#include "example.hpp" in "metaheuristic.hpp".
 
 ## Compile the project
 
@@ -20,8 +20,8 @@ In addition, add "#include "annealing.hpp" in "metaheuristic.hpp.
 
 - In the terminal, type the following commands:
 
-- cmake ..
+- - cmake ..
 
-* make
+- - make
 
-* ./Optimizer (to run)
+- - ./Optimizer (to run)
