@@ -20,8 +20,8 @@ In addition, add "#include "example.hpp" in "metaheuristic.hpp".
 
 - In the terminal, type the following commands:
 
-\*\* cmake ..
+  - cmake ..
 
-\*\* make
+  - make
 
-\*\* ./Optimizer (to run)
+  - ./Optimizer (to run)
