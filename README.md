@@ -10,8 +10,8 @@ change
 
 ## Compile the project
 
-Open a terminal in the project folder
-In the terminal type the following commands
-cmake ..
-make
+Open a terminal in the project folder\\
+In the terminal type the following commands\\
+cmake ..\\
+make\\
 ./Optimizer (to run)
