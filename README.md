@@ -2,7 +2,7 @@
 
 - This project is under construction.
 
-Several Nature-inspired optimization algorithms are considered here.
+* Several Nature-inspired optimization algorithms are considered here.
 
 ## Use
 
@@ -16,12 +16,12 @@ In addition, add "#include "annealing.hpp" in "metaheuristic.hpp.
 
 ## Compile the project
 
-Open a terminal in the project folder
+- Open a terminal in the project folder
 
-In the terminal, type the following commands:
+- In the terminal, type the following commands:
 
-cmake ..
+- cmake ..
 
-make
+* make
 
-./Optimizer (to run)
+* ./Optimizer (to run)
